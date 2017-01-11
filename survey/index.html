@@ -16,31 +16,22 @@
           <label for="name">What's your name?</label>
           <input type="text" class="form-control">
         </div>
-        <div id="beverage" class="container">
-          <select class="form-control">
-            <option value="tea">Tea</option>
-            <option value="coffee">Coffee</option>
-            <option value="water">Water</option>
-            <option value="soda">Soda</option>
-            <option value="energy">Energy Drink</option>
-          </select>
-        </div>
         <div id="music" class="container">
           <div class="radio">
             <label>
-              <input type="radio" name="rock" value="rock" checked>
+              <input type="radio" name="radio" value="rock" checked>
               Rock
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="pop" value="pop">
+              <input type="radio" name="radio" value="pop">
               Pop
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="rap" value="rap">
+              <input type="radio" name="radio" value="rap">
               Rap
             </label>
           </div>
@@ -52,9 +43,21 @@
             </div>
         </div>
         <div id="color" class="container">
+          <div class="form-group">
+            <label for="color">What is your favorite color?</label>
+            <input type="color" class="form-control" id="color">
+          </div>
 
         </div>
+        <button type="submit">Submit</button>
       </form>
+
+    </div>
+    <div class="container">
+      <ul id="results">
+
+      </ul>
+
     </div>
   </body>
 </html>
