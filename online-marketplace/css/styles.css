@@ -1,3 +1,38 @@
+body {
+  background-color: #b3b6bc
+}
+
 img {
   width: 100%;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.jumbotron {
+  margin-top: 20px;
+  background-color: #286090;
+  color: #FFFFFF;
+  border-radius: 20px;
+
+}
+
+h3 {
+  display: inline;
+}
+
+p {
+  text-align: center;
+}
+
+#sentName {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+#receipt {
+  margin-top: 40px;
+  display: none;
 }

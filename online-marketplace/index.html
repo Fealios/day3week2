@@ -6,52 +6,70 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="js/scripts.js"></script>
   <meta charset="utf-8">
-  <title>Receive a letter</title>
+  <title>Sneakers</title>
 </head>
   <body>
-    <h1>Sneakers galore</h1>
-
-  <form>
-    <div class="container row">
-      <div class="col-md-4">
-        <div class="radio">
-          <label>
-            <input type="radio" name="product" value="199$">
-            <img src="images/199.png" alt="Puma" />
-          </label>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="radio">
-          <label>
-            <input type="radio" name="product" value="299$">
-            <img src="images/299.jpg" alt="Puma" />
-          </label>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="radio">
-          <label>
-            <input type="radio" name="product" value="399$">
-            <img src="images/399.jpg" alt="Puma" />
-          </label>
-        </div>
-      </div>
+    <div class="container jumbotron">
+      <h1>Sneakers Galore</h1>
+        <p>Welcome to Sneakers Galore, where you can buy any sneaker.</p>
     </div>
     <div class="container">
-      <div class="form-group">
-        <label for="name">Tell us your name</label>
-        <input id="customerName" class="form-control" type="text">
+    <form id="buySneakers">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="radio">
+            <label>
+              <input type="radio" name="product" value="199">
+              <img src="images/199.jpg" alt="Puma" />
+              Allbirds
+              199$
+            </label>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="radio">
+            <label>
+              <input type="radio" name="product" value="299">
+              <img src="images/299.jpg" alt="Puma" />
+              Nike Killshot 2.0
+              299$
+            </label>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="radio">
+            <label>
+              <input type="radio" name="product" value="399">
+              <img src="images/399.jpg" alt="Puma" />
+              Yeezy 350 Boost
+              399$
+            </label>
+          </div>
+        </div>
       </div>
-      <div class="form-group">
-        <label for="address">Tell us your address</label>
-        <input id="customerAddress" class="form-control" type="text">
+      <div>
+        <div class="form-group">
+          <label for="name">Tell us your name</label>
+          <input id="customerName" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="address">Tell us your address</label>
+          <input id="customerAddress" class="form-control" type="text">
+        </div>
       </div>
-    </div>
 
-    <button type="submit" name="button">Complete Order</button>
-  </form>
+      <div>
+        <button type="submit" name="button" class="btn btn-primary">Complete Order</button>
+      </div>
+    </form>
+  </div>
 
-  
+  <div class="container well" id="receipt">
+    <h2>Receipt:</h2>
+    <h3 id="sentName"></h3><h3 id=sentAddress></h3>
+    <br>
+    <h2 id="totalCost"></h2>
+  </div>
+
   </body>
 </html>
