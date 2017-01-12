@@ -4,7 +4,7 @@ $(function(){
     // console.log(cost);
     var name = $('#customerName').val();
     var address = $('#customerAddress').val();
-    var totalCost = (parseInt(cost)*1.095).toFixed(2)+"$";
+    var totalCost = '$'+(parseInt(cost)*1.095).toFixed(2);
     // console.log(totalCost);
 
     $('#sentName').text(name);
